@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QONAEV SPACE — видеостудия</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__inner">
+    <div class="logo">QONAEV <span>SPACE</span></div>
+    <nav class="nav">
+      <a href="#services">Услуги</a>
+      <a href="#portfolio">Работы</a>
+      <a href="#booking">Запись</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#booking" class="btn btn--small">Записаться</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__inner">
+    <h1>Видеостудия в центре города</h1>
+    <p>Съёмка интервью, подкастов, рекламы и клипов под ключ. Свет, звук и оборудование уже готовы — приходите с идеей.</p>
+    <a href="#booking" class="btn">Записаться на съёмку</a>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <h2>Услуги</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Съёмка интервью</h3>
+        <p>2 камеры, профессиональный свет и микрофоны. Готовое видео на следующий день.</p>
+        <div class="price">от 3000 ₸/час</div>
+      </div>
+      <div class="card">
+        <h3>Подкаст-студия</h3>
+        <p>До 4 участников, многоканальная запись звука, видеомонтаж по желанию.</p>
+        <div class="price">от 4000 ₸/час</div>
+      </div>
+      <div class="card">
+        <h3>Рекламный ролик</h3>
+        <p>Съёмка продукта, хромакей, монтаж и цветокоррекция.</p>
+        <div class="price">от 15000 ₸/проект</div>
+      </div>
+      <div class="card">
+        <h3>Аренда студии</h3>
+        <p>Студия целиком: свет, фон, звук — для своей команды и техники.</p>
+        <div class="price">от 2500 ₸/час</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <h2>Наши работы</h2>
+    <div class="gallery">
+      <div class="gallery__item"></div>
+      <div class="gallery__item"></div>
+      <div class="gallery__item"></div>
+      <div class="gallery__item"></div>
+      <div class="gallery__item"></div>
+      <div class="gallery__item"></div>
+    </div>
+    <p class="gallery__hint">Замените эти блоки своими фото/видео из проектов.</p>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="container">
+    <h2>Запись на съёмку</h2>
+    <p class="booking__hint">Заполните форму — заявка откроется в WhatsApp, и мы подтвердим время.</p>
+
+    <form class="booking__form" id="bookingForm">
+      <div class="form__row">
+        <label>
+          Имя
+          <input type="text" name="name" required placeholder="Как вас зовут">
+        </label>
+        <label>
+          Телефон
+          <input type="tel" name="phone" required placeholder="+7 ...">
+        </label>
+      </div>
+
+      <div class="form__row">
+        <label>
+          Услуга
+          <select name="service">
+            <option>Съёмка интервью</option>
+            <option>Подкаст-студия</option>
+            <option>Рекламный ролик</option>
+            <option>Аренда студии</option>
+            <option>Другое</option>
+          </select>
+        </label>
+        <label>
+          Дата
+          <input type="date" name="date" required>
+        </label>
+        <label>
+          Время
+          <input type="time" name="time" required>
+        </label>
+      </div>
+
+      <label>
+        Комментарий
+        <textarea name="comment" rows="3" placeholder="Кратко опишите идею съёмки"></textarea>
+      </label>
+
+      <button type="submit" class="btn">Отправить заявку</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer" id="contacts">
+  <div class="container footer__inner">
+    <div>
+      <div class="logo">QONAEV <span>SPACE</span></div>
+      <p>г. Алматы, ул. Примерная, 10</p>
+    </div>
+    <div class="footer__contacts">
+      <p>Телефон: <a href="tel:+77001234567">+7 700 123 45 67</a></p>
+      <p>WhatsApp: <a href="https://wa.me/77001234567" target="_blank" rel="noopener">+7 700 123 45 67</a></p>
+      <p>Instagram: <a href="#" target="_blank" rel="noopener">@qonaev.space</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
