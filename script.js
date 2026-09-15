@@ -1,6 +1,35 @@
 // Номер студии в WhatsApp (замените на свой, в формате без + и пробелов)
 const STUDIO_WHATSAPP = "77004042616";
 
+const LANG_KEY = "qonaev-lang";
+
+function applyLanguage(lang) {
+  document.querySelectorAll("[data-ru]").forEach((el) => {
+    const text = el.dataset[lang === "kk" ? "kk" : "ru"];
+    if (text !== undefined) el.textContent = text;
+  });
+
+  document.querySelectorAll("[data-ru-placeholder]").forEach((el) => {
+    const text = el.dataset[lang === "kk" ? "kkPlaceholder" : "ruPlaceholder"];
+    if (text !== undefined) el.placeholder = text;
+  });
+
+  document.documentElement.lang = lang === "kk" ? "kk" : "ru";
+
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("is-active", btn.dataset.lang === lang);
+  });
+
+  localStorage.setItem(LANG_KEY, lang);
+}
+
+document.querySelectorAll(".lang-btn").forEach((btn) => {
+  btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
+});
+
+const savedLang = localStorage.getItem(LANG_KEY);
+if (savedLang === "kk") applyLanguage("kk");
+
 const form = document.getElementById("bookingForm");
 
 form.addEventListener("submit", (e) => {

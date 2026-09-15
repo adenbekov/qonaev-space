@@ -109,6 +109,33 @@ h1,h2,h3{line-height:1.15;}
 .nav a{color:var(--muted);font-size:14px;white-space:nowrap;}
 .nav a:hover{color:var(--text);}
 
+.lang-switch{
+  display:flex;
+  align-items:center;
+  gap:2px;
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:3px;
+}
+.lang-btn{
+  border:none;
+  background:transparent;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.02em;
+  padding:6px 12px;
+  border-radius:999px;
+  cursor:pointer;
+  transition:background .2s, color .2s;
+}
+.lang-btn.is-active{
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#fff;
+}
+.lang-btn:not(.is-active):hover{color:var(--text);}
+
 /* hero */
 .hero{
   padding:150px 0 60px;
