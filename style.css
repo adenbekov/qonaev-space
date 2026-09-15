@@ -16,10 +16,11 @@
 html{background:var(--bg);}
 
 body{
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
   background:var(--bg);
   color:var(--ink);
-  line-height:1.5;
+  line-height:1.6;
+  font-size:16px;
 }
 
 .grad-text{color:var(--accent-ink);}
@@ -36,7 +37,11 @@ body{
 
 a{color:inherit;text-decoration:none;}
 
-h1,h2,h3{line-height:1.15;}
+h1,h2,h3,.logo,.btn,.card__cta,.price,.hero__badge,.process__num{
+  font-family:"Space Grotesk","Inter",sans-serif;
+}
+
+h1,h2,h3{line-height:1.15;letter-spacing:-.01em;}
 
 .btn{
   display:inline-block;
@@ -283,6 +288,73 @@ h1,h2,h3{line-height:1.15;}
   color:var(--muted);
   font-size:13px;
   margin-top:20px;
+}
+
+/* process */
+.process{padding:70px 0;}
+.process h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:40px;
+}
+.process__grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px;
+}
+.process__step{position:relative;padding-top:8px;}
+.process__num{
+  font-size:36px;
+  font-weight:700;
+  color:var(--lime);
+  -webkit-text-stroke:1.5px var(--ink);
+  margin-bottom:10px;
+}
+.process__step h3{font-size:17px;margin-bottom:8px;}
+.process__step p{color:var(--muted);font-size:14px;}
+
+/* faq */
+.faq{padding:70px 0;}
+.faq h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:40px;
+}
+.faq__list{
+  max-width:720px;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.faq__item{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:18px 22px;
+}
+.faq__item summary{
+  cursor:pointer;
+  font-weight:600;
+  font-size:15px;
+  list-style:none;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.faq__item summary::-webkit-details-marker{display:none;}
+.faq__item summary::after{
+  content:"+";
+  font-size:20px;
+  color:var(--accent-ink);
+  margin-left:12px;
+  flex-shrink:0;
+}
+.faq__item[open] summary::after{content:"−";}
+.faq__item p{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:12px;
 }
 
 /* booking */
