@@ -285,6 +285,17 @@ input:focus, select:focus, textarea:focus{
 }
 .footer p{color:var(--muted);font-size:14px;margin-top:8px;}
 .footer a:hover{color:var(--accent);}
+.contact-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.contact-link svg{
+  width:18px;
+  height:18px;
+  flex-shrink:0;
+  color:var(--accent);
+}
 
 @media (max-width:760px){
   .nav-pill{
