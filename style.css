@@ -80,7 +80,8 @@ h1,h2,h3{line-height:1.15;letter-spacing:-.01em;}
   box-shadow:0 20px 50px rgba(0,0,0,.18);
   max-width:100%;
 }
-.logo{font-size:18px;font-weight:800;white-space:nowrap;color:var(--ink-invert);}
+.logo{font-size:18px;font-weight:800;white-space:nowrap;color:var(--ink);}
+.nav-pill .logo{color:var(--ink-invert);}
 .nav{display:flex;gap:22px;}
 .nav a{color:var(--muted-invert);font-size:14px;white-space:nowrap;}
 .nav a:hover{color:var(--ink-invert);}
