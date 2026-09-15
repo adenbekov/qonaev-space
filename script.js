@@ -1,5 +1,5 @@
 // Номер студии в WhatsApp (замените на свой, в формате без + и пробелов)
-const STUDIO_WHATSAPP = "77001234567";
+const STUDIO_WHATSAPP = "77004042616";
 
 const form = document.getElementById("bookingForm");
 
